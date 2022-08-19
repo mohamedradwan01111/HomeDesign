@@ -1,0 +1,103 @@
+<!-- this is the navbar  -->
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid ">
+        <a class="navbar-brand text-danger" routerLink="">
+            <img src="assets/img/logo.PNG" style="border-radius:20px ;" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-white"><fa-icon [icon]="faBars"></fa-icon></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link  text-white" aria-current="page" routerLink="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="electric">Electric</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="furniture">Furniture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="carpet">Carpets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="employees">Employees</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>
+
+
+<!-- this is the footer -->
+
+<div class="container-fluid mt-5 bg-dark text-white ">
+    <!-- for the first row -->
+    <div class="row text-center justify-content-center p-2">
+        <div class="col-lg-3 col-md-12 ">
+            <img src="assets/img/logo.PNG" style="border-radius:20px ;" alt="picture">
+        </div>
+        <div class="col-lg-3 col-md-12 ">
+            <span class="m-1 fs-2"><a href="http://www.facebook.com" target="none"><fa-icon [icon]="faFacebook"></fa-icon></a></span>
+            <span class="m-1 fs-2"><a href="http://www.linkedin.com" target="none"><fa-icon [icon]="faLinkedin"></fa-icon></a></span>
+            <span class="m-1 fs-2"><a href="http://whatsapp.com" target="none"><fa-icon [icon]="faWhatsapp"></fa-icon></a></span>
+            <span class="m-1 fs-2"><a href="http://www.youtube.com" target="none"><fa-icon [icon]="faYoutube"></fa-icon></a></span>
+        </div>
+    </div>
+    <!-- end of the first row  -->
+    <!-- the second section -->
+    <div class="row text-center">
+        <div class="col-lg-3 col-md-12">
+            <ul>
+                <li><a href="#">NewsletterFind</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="#">Other Hearst Subscription </a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+            <ul>
+                <li><a href="#">Find a Designer</a></li>
+                <li><a href="#">Community Guidlines</a></li>
+                <li><a href="#">Giveways</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Advertise Ontime</a></li>
+                <li><a href="#">Events & Promotions</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+            <ul>
+                <li><a href="#">Press Room</a></li>
+                <li><a href="#">Customer Service </a></li>
+                <li><a href="#">Media Kit</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- the third section  -->
+    <div class="text-center ">
+        <p>
+            A Part of Hearst Digital Media <br> ELLE Decor participates in various affiliate marketing programs, which means we may get paid commissions on editorially chosen products purchased through our links to retailer sites. <br> ©2022 MohamedRadwan.
+            All Rights Reserved.
+        </p>
+        <div class="">
+            <span><a href="#">About</a></span>
+            <span><a href="#">Privacy Notice/Notice at Collection</a></span>
+            <span><a href="#">Your California Privacy Rights</a></span>
+            <span><a href="#">Interest-Based Ads</a></span>
+            <span><a href="#">Term of Use</a></span>
+            <span><a href="https://www.google.com/maps/place/%D9%87%D8%A7%D9%8A%D8%A8%D8%B1+%D9%88%D8%A7%D9%86%E2%80%AD/@30.0302258,31.0234114,17z/data=!3m1!4b1!4m5!3m4!1s0x14585ba897ccfe3b:0x15d82d85f637331c!8m2!3d30.0302212!4d31.0212227" target="none">Site Map</a></span><br>
+            <button class="btn btn-dark text-white">Do Not Sell My Personal Information</button>
+            <br><br>
+        </div>
+    </div>
+</div>
